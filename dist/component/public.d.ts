@@ -45,8 +45,8 @@ export declare const getSubscription: import("convex/server").RegisteredQuery<"p
     metadata?: any;
     cancelAt?: number | undefined;
     quantity?: number | undefined;
-    orgId?: string | undefined;
     userId?: string | undefined;
+    orgId?: string | undefined;
     stripeCustomerId: string;
     status: string;
     stripeSubscriptionId: string;
@@ -63,8 +63,8 @@ export declare const listSubscriptions: import("convex/server").RegisteredQuery<
     metadata?: any;
     cancelAt?: number | undefined;
     quantity?: number | undefined;
-    orgId?: string | undefined;
     userId?: string | undefined;
+    orgId?: string | undefined;
     stripeCustomerId: string;
     status: string;
     stripeSubscriptionId: string;
@@ -82,8 +82,8 @@ export declare const getSubscriptionByOrgId: import("convex/server").RegisteredQ
     metadata?: any;
     cancelAt?: number | undefined;
     quantity?: number | undefined;
-    orgId?: string | undefined;
     userId?: string | undefined;
+    orgId?: string | undefined;
     stripeCustomerId: string;
     status: string;
     stripeSubscriptionId: string;
@@ -100,8 +100,8 @@ export declare const listSubscriptionsByOrgId: import("convex/server").Registere
     metadata?: any;
     cancelAt?: number | undefined;
     quantity?: number | undefined;
-    orgId?: string | undefined;
     userId?: string | undefined;
+    orgId?: string | undefined;
     stripeCustomerId: string;
     status: string;
     stripeSubscriptionId: string;
@@ -119,8 +119,8 @@ export declare const listSubscriptionsByUserId: import("convex/server").Register
     metadata?: any;
     cancelAt?: number | undefined;
     quantity?: number | undefined;
-    orgId?: string | undefined;
     userId?: string | undefined;
+    orgId?: string | undefined;
     stripeCustomerId: string;
     status: string;
     stripeSubscriptionId: string;
@@ -136,8 +136,8 @@ export declare const getPayment: import("convex/server").RegisteredQuery<"public
 }, Promise<{
     metadata?: any;
     stripeCustomerId?: string | undefined;
-    orgId?: string | undefined;
     userId?: string | undefined;
+    orgId?: string | undefined;
     created: number;
     status: string;
     amount: number;
@@ -152,8 +152,8 @@ export declare const listPayments: import("convex/server").RegisteredQuery<"publ
 }, Promise<{
     metadata?: any;
     stripeCustomerId?: string | undefined;
-    orgId?: string | undefined;
     userId?: string | undefined;
+    orgId?: string | undefined;
     created: number;
     status: string;
     amount: number;
@@ -168,8 +168,8 @@ export declare const listPaymentsByUserId: import("convex/server").RegisteredQue
 }, Promise<{
     metadata?: any;
     stripeCustomerId?: string | undefined;
-    orgId?: string | undefined;
     userId?: string | undefined;
+    orgId?: string | undefined;
     created: number;
     status: string;
     amount: number;
@@ -184,8 +184,8 @@ export declare const listPaymentsByOrgId: import("convex/server").RegisteredQuer
 }, Promise<{
     metadata?: any;
     stripeCustomerId?: string | undefined;
-    orgId?: string | undefined;
     userId?: string | undefined;
+    orgId?: string | undefined;
     created: number;
     status: string;
     amount: number;
@@ -199,8 +199,8 @@ export declare const listInvoices: import("convex/server").RegisteredQuery<"publ
     stripeCustomerId: string;
 }, Promise<{
     stripeSubscriptionId?: string | undefined;
-    orgId?: string | undefined;
     userId?: string | undefined;
+    orgId?: string | undefined;
     stripeCustomerId: string;
     amountDue: number;
     amountPaid: number;
@@ -215,8 +215,8 @@ export declare const listInvoicesByOrgId: import("convex/server").RegisteredQuer
     orgId: string;
 }, Promise<{
     stripeSubscriptionId?: string | undefined;
-    orgId?: string | undefined;
     userId?: string | undefined;
+    orgId?: string | undefined;
     stripeCustomerId: string;
     amountDue: number;
     amountPaid: number;
@@ -231,8 +231,8 @@ export declare const listInvoicesByUserId: import("convex/server").RegisteredQue
     userId: string;
 }, Promise<{
     stripeSubscriptionId?: string | undefined;
-    orgId?: string | undefined;
     userId?: string | undefined;
+    orgId?: string | undefined;
     stripeCustomerId: string;
     amountDue: number;
     amountPaid: number;
@@ -280,8 +280,8 @@ export declare const createOrUpdateCustomer: import("convex/server").RegisteredM
  * and additional data in the metadata field.
  */
 export declare const updateSubscriptionMetadata: import("convex/server").RegisteredMutation<"public", {
-    orgId?: string | undefined;
     userId?: string | undefined;
+    orgId?: string | undefined;
     metadata: any;
     stripeSubscriptionId: string;
 }, Promise<null>>;
